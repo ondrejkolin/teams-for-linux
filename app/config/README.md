@@ -34,7 +34,8 @@ Here is the list of available arguments and its usage:
 | customUserDir | Custom User Directory so that you can have multiple profiles | |
 | appLogLevels | Comma separated list of log levels (error,warn,info,debug) | error,warn |
 | clearStorage | Whether to clear the storage before creating the window or not | false |
-| disableNotifications | A flag to disable all notifications | false |
+| enableChromeExtensions | Whether to disable Chrome extensions or not | false |
+| disableNotifications | A flag to disable all notifications s| false |
 | disableMeetingNotifications | Whether to disable meeting notifications or not | false |
 | disableNotificationSound | Disable chat/meeting start notification sound | false |
 | disableNotificationSoundIfNotAvailable | Disable chat/meeting start notification sound if status is not Available (e.g. busy, in a call) | true |

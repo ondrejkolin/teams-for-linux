@@ -1,0 +1,54 @@
+{
+   "action": {
+      "default_icon": {
+         "19": "assets/icons/pwa-logo-19x19.png",
+         "38": "assets/icons/pwa-logo-38x38.png"
+      },
+      "default_popup": "popup.html",
+      "default_title": "ProWritingAid"
+   },
+   "background": {
+      "service_worker": "./background.js"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "./polyfills.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "./prepare.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": true,
+      "js": [ "./ping.js" ],
+      "match_about_blank": true,
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   } ],
+   "content_security_policy": {
+      "object-src": "'self'",
+      "script-src": "'self' 'unsafe-eval' https://az416426.vo.msecnd.net"
+   },
+   "description": "The best writing style and grammar checker for everything you send, share, tweet or publish.",
+   "differential_fingerprint": "1.480d1a23c46fbc20f9dfa6f38f71ea84e6d3250bbe72b5184b66d28da0704a43",
+   "host_permissions": [ "http://*/*", "https://*/*" ],
+   "icons": {
+      "128": "assets/icons/pwa-logo-128x128.png",
+      "16": "assets/icons/pwa-logo-16x16.png",
+      "48": "assets/icons/pwa-logo-48x48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnVJC+CVniCVR/sgX4xU1oDvdWy7aM12efq2pk4uBPBjrzk2oa9i3IU+g6mIb/wFwxkvcohzI1sGT0NsxIkqaRr4xPhWswTbmy4Y0ADR/jAD3vKVP/iz8/0jucmHW7JdNbhx+u1VrSk9HotlsMSGdtnMOavsFcCpVdIjkGnsL88tJeMJqZMITyvh4bjds3O4lewLj/jvQmEsazTolHX2CJeavRNhhYpP93d8Qk+luZ9IzTrCqS0p9ei7NonYwo2bRpmU9ack3Scwfrk7q9SS0X8zEmSDSZayUIX7nj0MEJjOjhVQ6dDuQBsllq9Z1W00SMKlohOIz/UXy7FX6HHnZJQIDAQAB",
+   "manifest_version": 3,
+   "name": "ProWritingAid Grammar Checker & Writing Coach",
+   "permissions": [ "tabs", "cookies", "storage", "clipboardRead", "clipboardWrite", "scripting" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.3.65535",
+   "web_accessible_resources": [ {
+      "matches": [ "https://*/*", "http://*/*" ],
+      "resources": [ "fonts/*.woff", "fonts/*.woff2", "fonts/*.ttf", "fonts/*.eot", "assets/*", "images/*", "summary-panel/*", "gdocs-patch.js", "facebook-draftjs-patch.js", "salesforce-patch.js", "index.html" ]
+   } ]
+}

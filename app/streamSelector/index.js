@@ -113,8 +113,8 @@ class StreamSelector {
 		};
 
 		this.parent.on('resize', _resize);
-		ipcMain.once('selected-source', _close);
-		ipcMain.once('close-view', _close);
+		ipcMain.on('selected-source', _close);
+		ipcMain.on('close-view', _close);
 	}
 }
 

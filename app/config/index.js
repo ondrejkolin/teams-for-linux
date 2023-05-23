@@ -100,13 +100,18 @@ function argv(configPath) {
 				type: 'array'
 			},
 			appLogLevels: {
-				default: 'error,warn',
+				default: 'error,warn,info',
 				describe: 'Comma separated list of log levels (error,warn,info,debug)',
 				type: 'string'
 			},
 			clearStorage: {
 				default: false,
 				describe: 'Whether to clear the storage before creating the window or not',
+				type: 'boolean'
+			},
+			enableChromeExtensions: {
+				default: true,
+				describe: 'Whether to enable Chrome extensions or not',
 				type: 'boolean'
 			},
 			disableNotifications: {

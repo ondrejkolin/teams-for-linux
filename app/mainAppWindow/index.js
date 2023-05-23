@@ -10,6 +10,7 @@ const onlineOffline = require('../onlineOffline');
 const { StreamSelector } = require('../streamSelector');
 const { LucidLog } = require('lucid-log');
 const { SpellCheckProvider } = require('../spellCheckProvider');
+const { ElectronChromeExtensions } = require('electron-chrome-extensions');
 
 let blockerId = null;
 
@@ -36,13 +37,23 @@ exports.onAppReady = async function onAppReady(mainConfig) {
 		levels: config.appLogLevels.split(',')
 	});
 
+	const extensions = new ElectronChromeExtensions();
+
 	window = await createWindow();
 	new Menus(window, config, config.appIcon);
 
 	addEventHandlers();
-
 	const url = processArgs(process.argv);
+	
 	window.loadURL(url ? url : config.url, { userAgent: config.chromeUserAgent });
+
+	if (config.enableChromeExtensions) {
+		logger.info('Electron Chrome Extensions support enabled');
+		// const defSession = session.fromPartition(config.partition);
+		// const ext = defSession.loadExtension(path.resolve('/Users/ismael.martinez/projects/github/teams-for-linux/extensions/bhchdcejhohfmigjafbampogmaanbfkg/0.5.0_0'));
+		// console.log(ext);
+		extensions.addTab(window.webContents, window);
+	}
 
 	applyAppConfiguration(config, window);
 };
@@ -332,6 +343,7 @@ function createNewBrowserWindow(windowState) {
 		height: windowState.height,
 		backgroundColor: isDarkMode ? '#302a75' : '#fff',
 
+		titleBarStyle: null,
 		show: false,
 		autoHideMenuBar: true,
 		icon: config.appIcon,

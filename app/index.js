@@ -207,7 +207,7 @@ function handleCertificateError() {
 }
 
 async function requestMediaAccess() {
-	['camera', 'microphone', 'screen'].map(async (permission) => {
+	['camera', 'microphone'].map(async (permission) => {
 		const status = await systemPreferences.askForMediaAccess(permission);
 		logger.debug(`mac permission ${permission} asked current status ${status}`);
 	});
