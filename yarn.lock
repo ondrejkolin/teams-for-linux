@@ -959,26 +959,10 @@ electron-dl@ismaelmartinez/electron-dl:
     pupa "^2.0.1"
     unused-filename "^2.1.0"
 
-electron-editor-context-menu@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.npmjs.org/electron-editor-context-menu/-/electron-editor-context-menu-1.1.1.tgz"
-  integrity sha512-Puqc/N7SHwGhx+G12eTCjtMDgiHe86GEKtJGClHj7GRiCwMxYrJuOyDfgqDb+uFoLerZV7xl0omVkZK4N6YFkw==
-  dependencies:
-    lodash.clonedeep "^4.3.0"
-    lodash.defaults "^4.0.1"
-    lodash.isarray "^4.0.0"
-    lodash.isempty "^4.1.2"
-    lodash.isfunction "^3.0.8"
-
 electron-is-dev@2.0.0:
   version "2.0.0"
   resolved "https://registry.npmjs.org/electron-is-dev/-/electron-is-dev-2.0.0.tgz"
   integrity sha512-3X99K852Yoqu9AcW50qz3ibYBWY79/pBhlMCab8ToEWS48R0T9tyxRiQhwylE7zQdXrMnx2JKqUJyMPmt5FBqA==
-
-electron-native-notification@1.2.1:
-  version "1.2.1"
-  resolved "https://registry.npmjs.org/electron-native-notification/-/electron-native-notification-1.2.1.tgz"
-  integrity sha512-vjbhA80nrzFtC33jDk+6a5z55vrannZtWd14clMDEj8YlFRLxIDbunjOaT3yBiHNBK7c/fGNtYkVZYMYgFpc1Q==
 
 electron-publish@24.3.0:
   version "24.3.0"
@@ -1796,31 +1780,6 @@ locate-path@^6.0.0:
   dependencies:
     p-locate "^5.0.0"
 
-lodash.clonedeep@^4.3.0:
-  version "4.5.0"
-  resolved "https://registry.npmjs.org/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz"
-  integrity sha512-H5ZhCF25riFd9uB5UCkVKo61m3S/xZk1x4wA6yp/L3RFP6Z/eHH1ymQcGLo7J3GMPfm0V/7m1tryHuGVxpqEBQ==
-
-lodash.defaults@^4.0.1:
-  version "4.2.0"
-  resolved "https://registry.npmjs.org/lodash.defaults/-/lodash.defaults-4.2.0.tgz"
-  integrity sha512-qjxPLHd3r5DnsdGacqOMU6pb/avJzdh9tFX2ymgoZE27BmjXrNy/y4LoaiTeAb+O3gL8AfpJGtqfX/ae2leYYQ==
-
-lodash.isarray@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-4.0.0.tgz"
-  integrity sha512-V8ViWvoNlXpCrB6Ewaj3ScRXUpmCvqp4tJUxa3dlovuJj/8lp3SND5Kw4v5OeuHgoyw4qJN+gl36qZqp6WYQ6g==
-
-lodash.isempty@^4.1.2:
-  version "4.4.0"
-  resolved "https://registry.npmjs.org/lodash.isempty/-/lodash.isempty-4.4.0.tgz"
-  integrity sha512-oKMuF3xEeqDltrGMfDxAPGIVMSSRv8tbRSODbrs4KGsRRLEhrW8N8Rd4DRgB2+621hY8A8XwwrTVhXWpxFvMzg==
-
-lodash.isfunction@^3.0.8:
-  version "3.0.9"
-  resolved "https://registry.npmjs.org/lodash.isfunction/-/lodash.isfunction-3.0.9.tgz"
-  integrity sha512-AirXNj15uRIMMPihnkInB4i3NHeb4iBtNg9WRWuK2o31S+ePwwNmDPaTL3o7dTJ+VXNZim7rFs4rxN4YU1oUJw==
-
 lodash.merge@^4.6.2:
   version "4.6.2"
   resolved "https://registry.npmjs.org/lodash.merge/-/lodash.merge-4.6.2.tgz"
@@ -2087,10 +2046,10 @@ node-gyp@^9.0.0:
     tar "^6.1.2"
     which "^2.0.2"
 
-node-sound@^0.0.5:
-  version "0.0.5"
-  resolved "https://registry.npmjs.org/node-sound/-/node-sound-0.0.5.tgz"
-  integrity sha512-jfBNZEVp2Hbh4CaEUJa46ePXEos3OA/FUycpdBQDnzcYZhH6fhlKgXp5UQ0ZIYAVEdxEMsIco6C2BE0uckTnFg==
+node-sound@^0.0.8:
+  version "0.0.8"
+  resolved "https://registry.yarnpkg.com/node-sound/-/node-sound-0.0.8.tgz#d451ef596418c779c4dc99c0ee9ec9082d38e3bc"
+  integrity sha512-IoRyknJK4sYdMW45P2kf1UD5LvjgDeu19EAEXm5KCrkDh1NvAjyjM2XOd2+daICldUIWjTQWGi/+1iKfuzEWsA==
 
 nopt@^6.0.0:
   version "6.0.0"

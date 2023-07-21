@@ -1,0 +1,16 @@
+{
+   "background": {
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+   },
+   "description": "Disables the automatic microphone gain control enabled by web applications like Google Meet and Hangouts.",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA6EejM52dLWEWKoD7H5KjxT1U3s0ySH1NaJN48/Dq7RR2vf/l2P7CWy0X+Qr/DeNdTFJ13IJTx8QWFC8Xk+NGibuQRnBuMWcPZrety3Xq3qmOog9RkGLUk6YdXNuPI9cGrKMTwVvs+kclyySX10eU7ZzIe9WD5N5Op2q4xjrmlReHR6pq9DniBByOYYfxmi+nkvs2vCpOF9v6WYB+nyKRKMLW+Gb0lT4hsRLvJxnqms6+0KWFLX9+OGFko73HWNjD3Psc5Hq2r8zfhgWd3d1l4rmh5qulLQyCXdmRtKtVERBFZt5LYCblSu1KBq+CnlxPEQ2kxpagoE6GXpGcWZN/SwIDAQAB",
+   "manifest_version": 2,
+   "name": "Disable Automatic Gain Control",
+   "optional_permissions": [ "http://*/", "https://*/" ],
+   "permissions": [ "activeTab", "contextMenus" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.2",
+   "web_accessible_resources": [ "disableAutogain.js" ]
+}
